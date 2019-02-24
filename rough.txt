@@ -1,0 +1,43 @@
+CREATE TABLE reviews(
+id SERIAL PRIMARY KEY,
+rating INTEGER NOT NULL,
+comment VARCHAR,
+isbn VARCHAR NOT NULL,
+user_id INTEGER REFERENCES users
+);
+
+
+CREATE TABLE users(
+id SERIAL PRIMARY KEY,
+username VARCHAR NOT NULL UNIQUE,
+pswrd VARCHAR NOT NULL
+);
+
+
+CREATE TABLE books(
+id SERIAL PRIMARY KEY,
+isbn VARCHAR NOT NULL,
+title VARCHAR NOT NULL,
+author VARCHAR NOT NULL,
+year INTEGER NOT NULL
+);
+
+<div class="container" style="background-color: white;width: 40%;padding: 10px" >
+	<form action="">
+		<br><br>
+		<h4>Create a new account</h4><br><br>
+
+		USERNAME: <input type="text" name="usernanme"><br><br>
+		PASSWORD: <input type="password" name="passwrd"><br><br>
+
+		 <input type="submit" class="btn btn-info" style="" value="Sign Up" ><br>
+
+		 
+		
+
+
+	</form>
+
+
+</div>
+

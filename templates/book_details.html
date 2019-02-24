@@ -1,0 +1,22 @@
+{%extends 'Layout.html'%}
+
+{%block body%}
+<div class="container" align="center">
+	
+	<h1>{{details.title}}</h1> <font size="3">by {{details.author}}({{details.year}})</font><br>
+	<div style="background-color: Lightgrey;width: 25%">
+	<h4>Goodreads reviews</h4>
+	<h5>Average Rating: {{avg_ratings}}/5</h5>
+	<h5>Number of Ratings:{{num_ratings}}</h5>
+	</div>
+	<div style="background-color: Lightgreen;width: 25%">
+		<h5>ADD YOUR RATING </h5>
+
+
+	</div>
+
+
+</div>
+
+
+{%endblock%}
