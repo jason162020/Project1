@@ -2,7 +2,11 @@
 
 
 {%block body%}
+<div class="container" align="right">
+<label style="color: grey">{{session["user"]}}</label><br>
+<a href="{{url_for('index')}}">Logout</a>
 
+</div>
 <div class="container" align="center">
 
 <h1>BOOK STORE</h1><br><br>
